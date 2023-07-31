@@ -780,15 +780,15 @@ function ScreenText({ invert, x = 0, y = 1.2, ...props }) {
       <ambientLight intensity={0.5} />
       <directionalLight position={[10, 10, 5]} />
       <Text
-        font="/Inter-Medium.woff"
-        // font="https://tecmie.com/_next/static/media/PxGrotesk-Bold.c56439bc.ttf"
+        // font="/Inter-Medium.woff"
+        font="https://tecmie.com/_next/static/media/PxGrotesk-Bold.c56439bc.ttf"
         position={[x, y, 0]}
         ref={textRef}
         fontSize={3}
         letterSpacing={1}
         color={!invert ? "#011627" : "#35c19f"}
       >
-        wootiv.
+        WOOTIV.
       </Text>
     </Screen>
   );
