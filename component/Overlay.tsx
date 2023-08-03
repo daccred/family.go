@@ -19,7 +19,7 @@ export function Overlay() {
         <br />
         <span style={{ color: '#999999'}}>
 
-        Because every customer truly deserve to be seen and heard.
+        Because every customer truly deserves to be seen and heard.
         </span>
       </a>
 
