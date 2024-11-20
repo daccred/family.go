@@ -41,7 +41,7 @@ export function Instances({ children, ...props }) {
       Object48: nodes.Object_216,
       Sphere: nodes.Sphere,
     }),
-    [nodes]
+    [nodes],
   );
   return (
     <Merged castShadow receiveShadow meshes={instances} {...props}>
@@ -766,7 +766,7 @@ function ScreenText({ invert, x = 0, y = 1.2, ...props }) {
   useFrame(
     (state) =>
       (textRef.current.position.x =
-        x + Math.sin(rand + state.clock.elapsedTime / 4) * 8)
+        x + Math.sin(rand + state.clock.elapsedTime / 4) * 8),
   );
   return (
     <Screen {...props}>
@@ -788,7 +788,7 @@ function ScreenText({ invert, x = 0, y = 1.2, ...props }) {
         letterSpacing={1}
         color={!invert ? "#011627" : "#35c19f"}
       >
-        WOOTIV.
+        FAMILY.
       </Text>
     </Screen>
   );
@@ -825,7 +825,7 @@ function Leds({ instances }) {
     ref.current.children.forEach((instance) => {
       const rand = Math.abs(2 + instance.position.x);
       const t = Math.round(
-        (1 + Math.sin(rand * 10000 + state.clock.elapsedTime * rand)) / 2
+        (1 + Math.sin(rand * 10000 + state.clock.elapsedTime * rand)) / 2,
       );
       instance.color.setRGB(0, t * 1.1, t);
     });

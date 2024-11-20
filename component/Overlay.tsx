@@ -3,32 +3,33 @@ import React from "react";
 export function Overlay() {
   return (
     <>
-    {/* Brand */}
+      {/* Brand */}
       <a
-        href="https://wootiv.ai/"
+        href="https://emissaries.xyz/"
         style={{
           color: "white",
           position: "absolute",
           bottom: 40,
           width: "60%",
-          left: '8vw',
+          left: "8vw",
           fontSize: "14px",
         }}
       >
-        &copy; Wootiv Corporation
+        &copy; The Family Corporation
         <br />
-        <span style={{ color: '#999999'}}>
-
-        Because every customer truly deserves to be seen and heard.
+        <span style={{ color: "#999999" }}>
+          You don’t need fiat, when you’ve got family.
         </span>
       </a>
 
       {/* Logo */}
-      <div style={{ position: "absolute", top: 40, left: '8vw', fontSize: "14px" }}>
-        <img src="/wootiv-logo.png" alt={'wootiv'} />
+      <div
+        style={{ position: "absolute", top: 40, left: "8vw", fontSize: "14px" }}
+      >
+        <img src="/family-dark.png" alt={"family"} />
       </div>
 
-{/* Greeting tag */}
+      {/* Greeting tag */}
       <div
         style={{
           position: "absolute",
